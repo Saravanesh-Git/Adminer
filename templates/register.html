@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Leaf Solution</title>
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="/static/register.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin=" anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <nav >
+        <div  class="navbar">
+            <div class="logo">
+                    <h1 class="tech">Zeploy </h1> 
+                </div>
+            </div>
+            <ul class="list">
+                <a href="home"><li class="home">Home</li></a>
+                <li>About</li>
+                <li>Service</li>
+                <li>Contact</li>
+                <a href="#"><button class="loginbox">sign up</button></a>
+                
+            </ul>
+        </div>        
+    </nav>
+<form action="" id="validation">
+    <div class="body">
+        <h1>Sign Up</h1>
+        <div class="wrong">
+            <i class="fa-solid fa-xmark close"></i>
+        </div>
+        <div class="input-box">
+            <input type="text" placeholder="username" id="username">
+            <i class='bx bxs-user'></i>
+            <span id="user"></span>
+        </div>
+        <div class="input-box">
+            <input type=" text" placeholder="email" id="email">
+            <i class='bx bxs-envelope'></i>
+            <span id="emailid"></span>
+        </div>
+        <div class="input-box">
+            <input type="password"placeholder="password" id="password" class="password">
+            <i class='bx bxs-lock-alt' id="toggle"></i>
+            <span id="pass"></span>
+
+        </div>
+        <div class="input-box">
+            <input type="password"placeholder="Confirm password" id="confirmpassword" >
+            <i class='bx bxs-lock-alt' id="confirmtoggle"></i>
+            <span id="confirm"></span>
+        </div>
+        
+        <div>
+            <button class="register">Submit</button>
+        </div>
+        <div class="Register">
+            <P>Already have an account ?<a href="login">Login</a></P>
+        </div>
+
+      
+    </div>
+</form>
+    <script src="/static/register.js"></script>
+
+
+
+</body>
+
+</html>

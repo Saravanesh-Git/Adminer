@@ -1,0 +1,391 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: poppins, sans-serif;
+
+}
+
+body {
+    background-color: transparent;
+    background-image: url("background4.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    margin: 0;
+    color: aliceblue;
+    transition: background-position 0.05s ease;
+    overflow: hidden;
+
+}
+
+.tech {
+    font-family: 'Orbitron', 'Exo 2', 'Rajdhani', sans-serif;
+    font-weight: bold;
+    color: rgb(91, 88, 88);
+    text-transform: uppercase;
+}
+
+
+.tech {
+    position: absolute;
+    left: 100px;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    height: 9vh;
+    justify-content: space-between;
+    background-color: transparent;
+    border: 2px solid color rgba (255, 255, 255, 0.2);
+    position: relative;
+    background-color: #022631;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: aliceblue;
+    z-index: 1;
+}
+
+.name {
+    position: relative;
+    left: 100px;
+}
+
+.name h1 {
+    font-size: 34px;
+    align-content: center;
+    color: rgb(244, 127, 41);
+    height: 100%;
+
+}
+
+.list {
+    font-family: 'Poppins', sans-serif;
+    font-size: 19px;
+    font-weight: 500;
+    padding: 25px;
+    width: 800px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    color: rgb(244, 127, 41);
+}
+
+.home {
+    color: rgb(212, 206, 196);
+}
+
+.list a {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+
+.account {
+    width: 40px;
+    height: 40px;
+    background-image: url(account.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    align-content: center;
+    position: relative;
+    bottom: 7.5px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.side {
+    margin-top: 50px;
+    height: 780px;
+    width: 250px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    background-color: #022631;
+
+}
+
+.service {
+    display: flex;
+    width: 250px;
+    height: 50px;
+    position: relative;
+    justify-content: center;
+    right: 45px;
+    cursor: pointer;
+
+}
+
+.service h4 {
+    align-content: center;
+    color: rgb(212, 206, 196);
+}
+
+.icon {
+    color: rgb(212, 206, 196);
+    align-content: center;
+    margin-right: 15px;
+
+}
+
+.adminer {
+    backdrop-filter: blur(42px);
+    background-color: rgba(0, 0, 0, 0.65) !important;
+    position: absolute;
+    border-radius: 10px;
+    width: 380px;
+    top: 210px;
+    left: 270px;
+    height: 400px;
+
+}
+.mysql{
+      backdrop-filter: blur(42px);
+    background-color: rgba(0, 0, 0, 0.65) !important;
+    position: absolute;
+    border-radius: 10px;
+    width: 380px;
+    top: 210px;
+    left: 1140px;
+    height: 400px;
+
+}
+.mysql h5{
+    position: absolute;
+    left: 100px;
+    top: 30px;
+}
+.mysql img{
+     width: 60px;
+    height: 33px;
+    position: relative;
+    top: 15px;
+    size: 2px;
+    z-index: 20;
+}
+
+.adminer img {
+    width: 60px;
+    height: 33px;
+    position: relative;
+    top: 15px;
+    size: 2px;
+    z-index: 20;
+}
+
+.para {
+    position: relative;
+    top: 40px;
+    left: 15px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.adminer li{
+    position: relative;
+    top: 50px;
+    font-size: 13px;
+}
+
+.mongodb {
+    backdrop-filter: blur(42px);
+    background-color: rgba(0, 0, 0, 0.65) !important;
+    position: absolute;
+    border-radius: 10px;
+    width: 400px;
+    top: 210px;
+    left: 700px;
+    height: 400px;
+}
+.mongodb img{
+    width: 60px;
+    height: 35px;
+    position: relative;
+    top: 13px;
+    size: 2px;
+    z-index: 20;
+}
+.mongodb h5{
+     position: absolute;
+    left: 100px;
+    top: 30px;
+}
+.box {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    left: 25px;
+    top: 25px;
+    border-radius: 5px;
+    z-index: 10;
+    background-color: white;
+}
+
+.adminer h5 {
+    position: absolute;
+    left: 100px;
+    top: 30px;
+}
+
+.span{
+    background-color: #3581c0;
+    font-weight: 500;
+    position: absolute;
+    font-size: 10px;
+    align-content: center;
+    left: 100px;
+    width: 130px;
+    padding: 5px;
+    height: 20px;
+    border-radius: 20px;
+}
+
+
+
+
+.maincontent {
+    width: 100%;
+    height: 750px;
+    background-color: transparent;
+}
+
+.labs {
+    margin-left: 250px;
+    width: 83.7%;
+    height: 100px;
+    padding-left: 35px;
+    padding-top: 15px;
+    backdrop-filter: blur(32px);
+    background-color: rgba(0, 0, 0, 0.65) !important;
+    position: relative;
+}
+
+.labs p {
+    padding-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* .accountbox{
+    width: 140px;
+    height: 90px;
+    border: 1px solid rgb(190, 186, 186);
+    position: absolute;
+    left: 1365px;
+    top: 60px;
+    background-color: transparent;
+    background-color: #022631;
+    opacity: 0.85;
+    border-radius: 5px;
+    z-index: 2;
+} */
+
+.livechat {
+    width: 300px;
+    height: 450px;
+    background-color: aliceblue;
+    position: fixed;
+    left: 1185px;
+    top: 185px;
+    border-radius: 5px;
+    display: none;
+}
+
+.upper {
+    width: 100%;
+    background-color: #0176fb;
+    height: 100px;
+}
+
+.upper h4 {
+    position: relative;
+    left: 113px;
+    top: 15px;
+}
+
+.chatbox {
+    position: fixed;
+    width: 75px;
+    height: 75px;
+    left: 1420px;
+    top: 660px;
+    display: block;
+    border-radius: 50px;
+    background: linear-gradient(to right, #1d8dfd, #0176fb);
+    cursor: pointer;
+
+}
+
+.msg {
+    position: relative;
+    font-size: 30px;
+    left: 22px;
+    top: 23px;
+}
+
+.accounts {
+    width: 33px;
+    height: 33px;
+    background-image: url(account.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    align-content: center;
+    position: relative;
+    bottom: 7.5px;
+    left: 20px;
+    top: 26px;
+    cursor: pointer;
+}
+
+.accounts h4 {
+    position: relative;
+    left: 45px;
+    top: 2px;
+}
+
+
+.chat {
+    position: relative;
+    top: 363.5px;
+    left: 0px;
+    border-top: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f1f6fb;
+
+}
+
+#chatInput {
+    width: 190px;
+    height: 35px;
+    width: 80%;
+    padding: 8px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+}
+
+.send-button {
+    position: relative;
+    right: 5px;
+    cursor: pointer;
+    width: 50px;
+    height: 35px;
+    background-color: #0176fb;
+    color: #f1f6fb;
+    border-radius: 2px;
+    border: none;
+
+
+}
