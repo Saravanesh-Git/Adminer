@@ -20,19 +20,6 @@ body {
 
 }
 
-.tech {
-    font-family: 'Orbitron', 'Exo 2', 'Rajdhani', sans-serif;
-    font-weight: bold;
-    color: rgb(91, 88, 88);
-    text-transform: uppercase;
-}
-
-
-.tech {
-    position: absolute;
-    left: 100px;
-}
-
 nav {
     display: flex;
     width: 100%;
@@ -70,8 +57,11 @@ nav {
     display: flex;
     justify-content: space-between;
     color: rgb(244, 127, 41);
-}
 
+}
+.list li{
+    cursor: pointer;
+}
 .home {
     color: rgb(212, 206, 196);
 }
@@ -93,7 +83,7 @@ nav {
     align-content: center;
     position: relative;
     bottom: 7.5px;
-    right: 20px;
+    right: 40px;
     cursor: pointer;
 }
 
@@ -131,120 +121,6 @@ nav {
     margin-right: 15px;
 
 }
-
-.adminer {
-    backdrop-filter: blur(42px);
-    background-color: rgba(0, 0, 0, 0.65) !important;
-    position: absolute;
-    border-radius: 10px;
-    width: 380px;
-    top: 210px;
-    left: 270px;
-    height: 400px;
-
-}
-.mysql{
-      backdrop-filter: blur(42px);
-    background-color: rgba(0, 0, 0, 0.65) !important;
-    position: absolute;
-    border-radius: 10px;
-    width: 380px;
-    top: 210px;
-    left: 1140px;
-    height: 400px;
-
-}
-.mysql h5{
-    position: absolute;
-    left: 100px;
-    top: 30px;
-}
-.mysql img{
-     width: 60px;
-    height: 33px;
-    position: relative;
-    top: 15px;
-    size: 2px;
-    z-index: 20;
-}
-
-.adminer img {
-    width: 60px;
-    height: 33px;
-    position: relative;
-    top: 15px;
-    size: 2px;
-    z-index: 20;
-}
-
-.para {
-    position: relative;
-    top: 40px;
-    left: 15px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-.adminer li{
-    position: relative;
-    top: 50px;
-    font-size: 13px;
-}
-
-.mongodb {
-    backdrop-filter: blur(42px);
-    background-color: rgba(0, 0, 0, 0.65) !important;
-    position: absolute;
-    border-radius: 10px;
-    width: 400px;
-    top: 210px;
-    left: 700px;
-    height: 400px;
-}
-.mongodb img{
-    width: 60px;
-    height: 35px;
-    position: relative;
-    top: 13px;
-    size: 2px;
-    z-index: 20;
-}
-.mongodb h5{
-     position: absolute;
-    left: 100px;
-    top: 30px;
-}
-.box {
-    width: 60px;
-    height: 60px;
-    position: relative;
-    left: 25px;
-    top: 25px;
-    border-radius: 5px;
-    z-index: 10;
-    background-color: white;
-}
-
-.adminer h5 {
-    position: absolute;
-    left: 100px;
-    top: 30px;
-}
-
-.span{
-    background-color: #3581c0;
-    font-weight: 500;
-    position: absolute;
-    font-size: 10px;
-    align-content: center;
-    left: 100px;
-    width: 130px;
-    padding: 5px;
-    height: 20px;
-    border-radius: 20px;
-}
-
-
-
-
 .maincontent {
     width: 100%;
     height: 750px;
@@ -266,29 +142,164 @@ nav {
     padding-top: 10px;
 }
 
+.adminer {
+    backdrop-filter: blur(42px);
+    background-color: rgba(0, 0, 0, 0.65) !important;
+    position: absolute;
+    border-radius: 10px;
+    width: 380px;
+    top: 210px;
+    left: 270px;
+    height: 400px;
+    cursor: pointer;
 
+}
 
+.adminer img {
+    width: 60px;
+    height: 33px;
+    position: relative;
+    top: 15px;
+    size: 2px;
+    z-index: 20;
+}
 
+.para {
+    position: relative;
+    top: 40px;
+    left: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
 
+.adminer li {
+    position: relative;
+    top: 50px;
+    font-size: 13px;
+}
 
+.database {
+    backdrop-filter: blur(42px);
+    background-color: rgba(0, 0, 0, 0.65) !important;
+    position: absolute;
+    border-radius: 10px;
+    width: 380px;
+    top: 210px;
+    left: 690px;
+    height: 400px;
 
+}
 
+.database img {
+    width: 60px;
+    height: 33px;
+    position: relative;
+    top: 15px;
+    size: 2px;
+    z-index: 20;
+}
 
+.database h5 {
+    position: absolute;
+    left: 100px;
+    top: 30px;
+}
 
+.point {
+    position: relative;
+    left: 50px;
+    padding: 5px;
+    top: 50px;
+}
 
-/* .accountbox{
-    width: 140px;
-    height: 90px;
-    border: 1px solid rgb(190, 186, 186);
+.point li {
+    padding-top: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 19px;
+}
+
+.points {
+    padding: 5px;
+    padding-left: 20px;
+}
+
+.points li {
+    padding-top: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 17px;
+}
+
+.Learn {
+    position: absolute;
+    top: 350px;
+    left: 260px;
+    width: 90px;
+    height: 30px;
+    padding: 5px;
+    background-color: #55b16e;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+
+}
+.manage{
+    position: absolute;
+    top: 350px;
+    font-family:Arial, Helvetica, sans-serif;
+    left: 150px;
+    width: 90px;
+    height: 30px;
+    padding: 5px;
+    background-color: #1b86b0;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    color: #f1f6fb;
+
+}
+.box {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    left: 25px;
+    top: 25px;
+    border-radius: 5px;
+    z-index: 10;
+    background-color: white;
+}
+
+.adminer h5 {
+    position: absolute;
+    left: 100px;
+    top: 30px;
+}
+
+.span {
+    background-color: #3581c0;
+    font-weight: 500;
+    position: absolute;
+    font-size: 10px;
+    align-content: center;
+    left: 100px;
+    width: 130px;
+    padding: 5px;
+    height: 20px;
+    border-radius: 20px;
+}
+
+.accountbox{
+    width: 130px;
+    height: 130px;
     position: absolute;
     left: 1365px;
-    top: 60px;
-    background-color: transparent;
-    background-color: #022631;
-    opacity: 0.85;
+    top: 63px;
     border-radius: 5px;
+    background-color: rgba(3, 3, 3, 0.9) !important;
+    border: 1px solid rgb(92, 97, 98);
     z-index: 2;
-} */
+    display: none;
+}
 
 .livechat {
     width: 300px;
