@@ -11,15 +11,13 @@ body {
     background-image: url("background4.jpg");
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
     background-repeat: no-repeat;
     min-height: 100vh;
     margin: 0;
     color: aliceblue;
     transition: background-position 0.05s ease;
-    overflow: hidden;
     height: 100vh;
-    overflow: hidden;
-
 }
 
 nav {
@@ -153,6 +151,7 @@ nav {
 
 .labs p {
     padding-top: 10px;
+
 }
 
 .adminer {
@@ -196,7 +195,7 @@ nav {
     position: absolute;
     border-radius: 10px;
     width: 410px;
-    top: 410px;
+    top: 460px;
     left: 270px;
     height: 400px;
     cursor: pointer;
@@ -205,7 +204,8 @@ nav {
     flex-grow: 1;
 
 }
-.mariadb img{
+
+.mariadb img {
     width: 60px;
     height: 33px;
     position: relative;
@@ -213,6 +213,13 @@ nav {
     size: 2px;
     z-index: 20;
 }
+
+.mariadb h5 {
+    position: absolute;
+    left: 110px;
+    top: 45px;
+}
+
 .database {
     backdrop-filter: blur(42px);
     background-color: rgba(0, 0, 0, 0.65) !important;
@@ -477,3 +484,14 @@ nav {
 
 
 }
+/* footer{
+    position: absolute;
+
+    top: 1100px;
+    width: calc(100% - 250px);
+    height: 48px;
+    background-color: #022631;
+}
+footer h5{
+    align-content: center;
+} */
