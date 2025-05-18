@@ -1,32 +1,9 @@
 from fastapi import FastAPI, Response, HTTPException, Request
 from pydantic import BaseModel
-from fastapi.responses import HTMLResponse
-from fastapi.templating import Jinja2Templates
-from fastapi.staticfiles import StaticFiles
 
 app = FastAPI()
 
 user_db = {}
-
-app.mount("/static", StaticFiles(directory="static"), name="static")
-templates = Jinja2Templates(directory="templates")
-
-@app.get("/", response_class=HTMLResponse)
-async def html(request: Request):
-    return templates.TemplateResponse("index.html", {"request": request})
-
-@app.get("/register", response_class=HTMLResponse)
-async def signup_html(request: Request):
-    return templates.TemplateResponse("register.html", {"request": request})
-
-@app.get("/login", response_class=HTMLResponse)
-async def login_html(request: Request):
-    return templates.TemplateResponse("index.html", {"request": request})
-
-@app.get("/home", response_class=HTMLResponse)
-async def home_html(request: Request):
-    return templates.TemplateResponse("home.html", {"request": request})
-
 
 class Signup(BaseModel):
     username: str
@@ -48,7 +25,7 @@ async def signup(user: Signup):
 
     return {"message": "Signup is Successful"}
 
-@app.post("/login")
+@app.post("/index/login")
 async def Login(user: login):
     Signup = user_db.get(user.username)
     if not Signup:

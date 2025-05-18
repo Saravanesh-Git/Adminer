@@ -112,7 +112,7 @@ nexttoggle.addEventListener("click", function () {
 
 async function postdata(user, pass, mail) {
   try {
-    const response = await fetch('http://127.0.0.1:8000/register/signup', {
+    const response = await fetch('/api/register/signup', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

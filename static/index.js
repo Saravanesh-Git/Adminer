@@ -28,6 +28,7 @@ toggle.addEventListener("click", function () {
 
 document.getElementById("loginvalidation").addEventListener("submit", function (event) {
   event.preventDefault();
+  
   let username = document.getElementById("username").value.trim();
   let password = document.getElementById("password").value.trim();
   let valid = true; 
@@ -53,7 +54,7 @@ document.getElementById("loginvalidation").addEventListener("submit", function (
 
 async function loginform(user, pass) {
   try {
-    const response = await fetch('http://127.0.0.1:8000/login', {
+    const response = await fetch('/api/index/login', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
