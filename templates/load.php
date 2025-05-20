@@ -1,0 +1,31 @@
+<?php
+
+function load_templates($name){
+    include __DIR__."/../__templates/$name.php";
+}
+
+function load_home_nav($nav){
+    include __DIR__."/../__templates/$nav.php";
+}
+
+function load_loginform($form){
+    include __DIR__."/../__templates/$form.php";
+}
+
+function home_main($content){
+    include __DIR__."/../__templates/$content.php";
+}
+
+function get_footer($foot){
+    include __DIR__."/../__templates/$foot.php";
+}
+
+function get_reg_nav($regnav){
+    include __DIR__."/../__templates/$regnav.php";
+}
+
+function get_reg_form($regform){
+    include __DIR__."/../__templates/$regform.php";
+}
+?>
+

@@ -8,7 +8,7 @@
 
 body {
     background-color: transparent;
-    background-image: url("background4.jpg");
+    background-image: url("../image/background4.jpg");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -77,7 +77,7 @@ nav {
 .account {
     width: 40px;
     height: 40px;
-    background-image: url(account.png);
+    background-image: url(/image/account.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

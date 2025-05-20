@@ -5,11 +5,12 @@
     font-family: poppins, sans-serif;
 
 }
+
 body {
-    background-color: antiquewhite;
-    background-image: url("background4.jpg");
+    background-color: transparent;
+    background-image: url("../image/background4.jpg");
     background-size: cover;
-    background-position: center;   
+    background-position: center;
     background-repeat: no-repeat;
     min-height: 100vh;
     margin: 0;
@@ -27,6 +28,14 @@ body {
     text-transform: uppercase;
 }
 
+.green {
+
+    font-family: 'Nexa Bold', 'Montserrat', 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #5D4531;
+    text-transform: uppercase;
+
+}
 
 .tech {
     position: absolute;
@@ -39,15 +48,13 @@ nav {
     height: 9vh;
     justify-content: space-between;
     background-color: transparent;
-    border: 2px solid color rgba (255,255,255,0.2);
+    border: 2px solid color rgba (255, 255, 255, 0.2);
     position: relative;
     left: 35px;
-    background: rgba(255, 255, 255, 0.1); 
-    backdrop-filter: blur(5px); 
+    backdrop-filter: blur(5px);
     border-radius: 10px;
     top: 30px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    color: aliceblue;
 
 }
 
@@ -70,36 +77,30 @@ nav {
 .list li:hover {
     color: black;
     cursor: pointer;
+    text-decoration: underline;
+
+    transition: transform 1s ease , height .2s ease;
     
 }
-.list  a{
-    text-decoration: none;
+.home {
+    
+    color: rgb(32, 32, 32);
     list-style: none;
+}
+.list a{
 
+    text-decoration: none;
 }
 
-.loginbox{
-    position: relative;
-    right: 32px;
-    border: 3px solid black;
-    outline: none;
-    padding: 4px;
-    width: 65px;
-    color: rgb(0, 0, 0);
-    height: 30px;
-    background-color: transparent;
-    border-radius: 5px;
-    font-size: 14px;
-    cursor: pointer;
-}
-.wrong{
+
+.wrong {
     position: absolute;
     top: 0px;
     right: 0px;
     width: 45px;
     height: 45px;
     background-color: black;
-    font-size: 2em; 
+    font-size: 2em;
     color: white;
     display: flex;
     justify-content: center;
@@ -111,33 +112,43 @@ nav {
 
 
 }
-.wrong .close{
+
+.loginbox {
+    position: relative;
+    right: 32px;
+    border: 3px solid black;
+    outline: none;
+    padding: 4px;
+    width: 65px;
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.wrong .close {
     color: white;
     overflow: hidden;
 }
-.loginbox:hover{
+
+.loginbox:hover {
     color: white;
     background-color: black;
     transition: 0.5s ease;
-}
-.home{
-    color: rgb(32, 32, 32);
+
 }
 
-i{
-    color: black;
-    cursor: pointer;
-}
 
 
 .body {
     background-color: transparent;
-    border: 2px solid color rgba (255,255,255,0.2);
+    border: 2px solid color rgba (255, 255, 255, 0.2);
     width: 420px;
     margin: auto;
-    box-shadow: 0 0 10px rgba(0,0,0,.2);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .2);
     border-radius: 20px;
-    height: 390px;
+    height: 470px;
     position: relative;
     top: 150px;
     padding: 20px;
@@ -154,13 +165,26 @@ i{
     
 }
 
+i {
+    color: black;
+    cursor: pointer;
+}
 
 .body h1 {
     color: rgb(0, 0, 0);
     font-family: 'Orbitron', 'Exo 2', 'Rajdhani', sans-serif;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 35px;
     text-align: center;
+    text-transform: uppercase;
+}
+
+span {
+    position: relative;
+    left: 35px;
+    top: 3px;
+    font-size: 14px;
+    color: rgb(235, 41, 7);
 }
 
 .input-box {
@@ -168,12 +192,19 @@ i{
     height: 65px;
 }
 
+input::placeholder {
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 15px;
+    
+
+}
+
 .input-box input {
-    color: black;
+    color: rgb(0, 0, 0);
     position: relative;
     left: 30px;
     width: 85%;
-    border-radius: 10px;
+    border-radius: 40px;
     border: none;
     border-bottom: 2px solid #333131;
     background: transparent;
@@ -184,24 +215,25 @@ i{
     transition: border-bottom 0.3s ease;
 
 }
-.input-box i{
+
+.input-box i {
     position: relative;
-    
+
 }
-input:focus {
-    border-bottom: 2px solid rgb(29, 28, 28); 
-}
-.remember{
+
+.remember {
     position: relative;
-    left: 47px;
-    top: 18px;
+    left: 49px;
+    top: 10px;;
     font-size: 14px;
     color: #333131;
     color: rgb(36, 36, 37);
 
 }
-.remember input[type=checkbox]{
-    border: 2px solid black;
+
+.remember input[type=checkbox] {
+    border: none;
+    outline: none;
     cursor: pointer;
     accent-color: white;
     border-radius: 10px;
@@ -209,38 +241,25 @@ input:focus {
 
 
 }
-input{
-    border-radius: 20px;
-}
-.remember a{
-    text-decoration: none;
-    font-weight: bold;
-    color: #333131;
-    position: relative;
-    left: 65px;
-    /* color: aliceblue; */
-    color: rgb(36, 36, 37);
-}
-.button{
-    position: relative;
-    top: 35px;
-    left:30px ;
-    height: 50px;
-}
-.login{
+
+.register {
     width: 85%;
     height: 50px;
     border-radius: 8px;
     border: none;
     outline: none;
     font-size: 20px;
+    position: relative;
+    left: 30px;
+    top: 25px;
     background-color: black;
     cursor: pointer;
     color: aliceblue;
+
 }
 .Register p{
     position: relative;
-    top: 55px;
+    top: 40px;
     left: 75px;
     color: rgb(36, 36, 37);
 
@@ -255,21 +274,19 @@ input{
     color: black;
 }
 
-#password{
+
+#password {
     font-size: 16px;
 }
-#password.big-text{
+
+#password.big-text {
     font-size: 18px;
 }
-#user{
-    color: #ff0000;
-    position: relative;
-    left:38px;
-    top: 5px;
+
+#confirmpassword {
+    font-size: 16px;
 }
-#pass{
-    color: #ff0000;
-    position: relative;
-    left:38px;
-    top: 5px;
+
+#confirmpassword.big-text {
+    font-size: 18px;
 }
