@@ -60,7 +60,7 @@
             <a href="https://www.mongodb.com/docs/" target="_blank"><button class="Learn" style="left: 280px;">Learn
                     more</button></a>
         </div>
-        <div class="mariadb" style="top: 660px;">
+        <div class="mariadb" style="top: 660px; height:420px;">
             <div class="box" style="left: 10px;">
                 <img src="/image/images.png" alt="">
             </div>
@@ -72,12 +72,13 @@
                 <li>MariaDB is an open-source relational database management system (RDBMS).</li>
                 <li>It is a fork of MySQL, created by the original MySQL developers.</li>
                 <li>Often faster than MySQL due to better optimization.</li>
+                <li>Improved storage engines and optimization.</li>
             </div>
-            <a href="../adminer.php"><button class="manage">Manage</button></a>
-            <a href="https://mariadb.com/kb/en/documentation/" target="_blank"><button class="Learn">Learn
+            <a href="../adminer.php"><button class="manage" style="top: 370px">Manage</button></a>
+            <a href="https://mariadb.com/kb/en/documentation/" target="_blank"><button class="Learn" style="top: 370px">Learn
                     more</button></a>
         </div>
-        <div class="mariadb" style="top: 660px; left: 695px;">
+        <div class="mariadb" style="top: 660px; left: 695px; height:420px;">
             <div class="box" style="left: 10px;">
                 <img src="/image/image copy 2.png" alt="" class="postgre">
             </div>
@@ -92,11 +93,11 @@
                 <li>Allows users to define custom functions, data types, operators, and even languages.</li>
                 <li>Fully supports Atomicity, Consistency, Isolation, and Durability.</li>
             </div>
-            <a href="../adminer.php"><button class="manage">Manage</button></a>
-            <a href="https://www.postgresql.org/docs/" target="_blank"><button class="Learn">Learn
+            <a href="../adminer.php"><button class="manage" style="top: 370px">Manage</button></a>
+            <a href="https://www.postgresql.org/docs/" target="_blank" ><button class="Learn" style="top: 370px">Learn
                     more</button></a>
         </div>
-        <div class="mariadb" style="top: 660px; left: 1123px; width: 400px;">
+        <div class="mariadb" style="top: 660px; left: 1123px; width: 400px; height:420px;">
             <div class="box" style="left: 10px;">
                 <img src="/image/oracle.jpg" alt="" class="postgre">
             </div>
@@ -110,8 +111,45 @@
                 <li>Early access to new capabilities (e.g., AI features, JSON enhancements, new PL/SQL features)</li>
                 <li>Participate in shaping the product by reporting bugs and suggestions.</li>
             </div>
-            <a href="../adminer.php"><button class="manage">Manage</button></a>
-            <a href="https://docs.oracle.com/cd/E71937_01/" target="_blank"><button class="Learn">Learn
+            <a href="../adminer.php"><button class="manage" style="top: 370px">Manage</button></a>
+            <a href="https://docs.oracle.com/cd/E71937_01/" target="_blank" ><button class="Learn" style="top: 370px">Learn
                     more</button></a>
         </div>
+        <div class="mariadb" style="top: 1130px; height:420px;">
+            <div class="box" style="left: 10px;">
+                <img src="/image/image copy 3.png" alt="">
+            </div>
+            <h5><strong>MS SQL SERVER</strong></h5>
+            <span class="span" style="left: 110px;">adminer.selfmade.solution</span>
+            <p class="para" style="left: 3px;">MS SQL, or Microsoft SQL Server, is a relational database management system (RDBMS) developed by Microsoft
+            </p>
+            <div class="point" style="margin-top: 33px; padding-left: 15px;">
+                <li>A powerful relational database system built and maintained by Microsoft.</li>
+                <li>Allows reusability and modular programming inside the database.</li>
+                <li>Includes authentication, encryption, role-based access, and advanced auditing.</li>
+               
+            </div>
+            <a href="../adminer.php"><button class="manage" style="top: 370px">Manage</button></a>
+            <a href="https://learn.microsoft.com/en-us/sql/?view=sql-server-ver17" target="_blank"><button class="Learn" style="top: 370px">Learn
+                    more</button></a>
+        </div>
+          <div class="mariadb" style="top: 1130px; left: 695px; height:420px;">
+            <div class="box" style="left: 10px;">
+                <img src="/image/sqlite.png" alt="" class="postgre">
+            </div>
+            <h5><strong>SQLite SERVER</strong></h5>
+            <span class="span" style="left: 110px;">adminer.selfmade.solution</span>
+            <p class="para" style="left: 3px;">
+                SQLite is a lightweight, self-contained, and serverless database that stores data in a single file on your device. It uses SQL to manage and query data, just like other databases.
+            </p>
+            <div class="point" style="margin-top: 33px; padding-left: 15px;">
+                <li>The entire library is less than 1 MB in size.</li>
+                <li>Supports Atomicity, Consistency, Isolation, and Durability, ensuring safe and correct transactions.</li>
+                <li>Very fast for small-to-medium databases.</li>
+            </div>
+            <a href="../adminer.php"><button class="manage" style="top: 370px">Manage</button></a>
+            <a href="https://www.sqlite.org/docs.html" target="_blank" ><button class="Learn" style="top: 370px">Learn
+                    more</button></a>
+        </div>
+
 </div>

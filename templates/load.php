@@ -27,5 +27,13 @@ function get_reg_nav($regnav){
 function get_reg_form($regform){
     include __DIR__."/../__templates/$regform.php";
 }
+
+function mysql_form($mysql){
+    include __DIR__."/../__templates/$mysql.php";
+}
+
+function mysql_css($css){
+    include __DIR__."/../css/$css.php";
+}
 ?>
 

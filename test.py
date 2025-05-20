@@ -56,7 +56,7 @@ async def Login(user: login):
         user_pass = existing[0]
         if user_pass != user.password:
             raise HTTPException(status_code = 404, detail = "Password is wrong")
-        
+        conn.commit()
 
         return {"message": "The Login is Successful"}
 
@@ -67,4 +67,33 @@ async def Login(user: login):
         cursor.close()
         conn.close()
 
-print("hii")
+        
+class Mysql(BaseModel):
+    username: str
+    password: str
+
+@app.post("/mysql/submit")
+async def MySQL(user: Mysql):
+    conn = db_connection()
+    cursor = conn.cursor()
+    try:
+        cursor.execute("SELECT * FROM MySQL WHERE name = %s", (user.username,))
+        existing = cursor.fetchone()
+        if existing:
+            raise HTTPException(status_code = 401, detail = "Username already exists")
+
+        cursor.execute("INSERT INTO MySQL (name, passwd) VALUES (%s, %s)", (user.username, user.password))
+        conn.commit()
+        return {"message": "User Added Successfully", 
+            "data": {
+            "username": user.username,
+            "password": user.password
+            }
+        }
+
+    except mysql.connector.Error as error:
+        raise HTTPException(status_code = 500, detail = f"MySQl Error : {error}")
+
+    finally:
+        cursor.close()
+        conn.close()
