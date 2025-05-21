@@ -74,6 +74,7 @@ class Mysql(BaseModel):
 
 @app.post("/mysql/submit")
 async def MySQL(user: Mysql):
+    print("Received:", user)
     conn = db_connection()
     cursor = conn.cursor()
     try:
@@ -84,12 +85,10 @@ async def MySQL(user: Mysql):
 
         cursor.execute("INSERT INTO MySQL (name, passwd) VALUES (%s, %s)", (user.username, user.password))
         conn.commit()
-        return {"message": "User Added Successfully", 
-            "data": {
+        return {"message": "User Added Successfully",
             "username": user.username,
             "password": user.password
             }
-        }
 
     except mysql.connector.Error as error:
         raise HTTPException(status_code = 500, detail = f"MySQl Error : {error}")

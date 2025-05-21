@@ -100,15 +100,15 @@
         height:200px; */
     
     }
-    /* label{
+    label{
         position:relative;
         top:27px;
-        margin-left:10px;
-    } */
-    span{
-        margin-left:32px;
+        margin-top:30px;
+        margin-left:20px;
     }
-    /* input{
+    
+    input{
+        border:none;
         margin-left:10px;
         border-radius:5px;
         backdrop-filter: blur(32px);
@@ -118,10 +118,13 @@
         height:30px;
         position:relative;
         color:white;
+        padding-left:10px;
         left:160px;
-    } */
+        
+    }
     input::placeholder{
-        padding:25px;
+        position:relative;
+        left:10px;
         
     }
     .loginform{
@@ -133,5 +136,18 @@
         backdrop-filter: blur(32px);
         background-color: rgba(0,0,0,0.85);
         border-radius:10px;
+        border: 1.5px solid rgb(244, 127, 41);
+    }
+    .loginform h4{
+        position:relative;
+        left:30px;
+        top:20px;
+    }
+    .tag{
+        position:absolute;
+        left:150px;
+        font-size:12px;
+        top:103px;
+        margin-left:32px;
     }
     </style>
