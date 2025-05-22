@@ -8,16 +8,12 @@ let form = document.querySelector(".form")
 popup.addEventListener("click", function () {
   form.classList.add("active-pop");
 })
-//   let closebutton = document.querySelector(".adduser");
-//   closebutton.addEventListener("doubleclick", function () {
-//     form.classList.remove("active-pop");
-//   })
 
 
 
 document.getElementById("validation").addEventListener("submit", function (event) {
   event.preventDefault();
-
+  let valid=true;
   let username = document.getElementById("usernames").value.trim();
   let password = document.getElementById("password").value.trim();
   let confirmpassword = document.getElementById("confirmpassword").value.trim();
@@ -26,22 +22,27 @@ document.getElementById("validation").addEventListener("submit", function (event
   
   if (username === "") {
     document.getElementById("user").innerText = "*Name is Required";
+    valid=false;
   
   } else if (username.length < 3 || username.length > 20) {
     document.getElementById("user").innerText = "*Name should be between 3 to 20 characters";
+    valid=false;
   
   } else if (!username.match(unamepattern)) {
     document.getElementById("user").innerText = "*Name should contain only alphabets";
+    valid=false;
     
   } else {
     document.getElementById("user").innerText = "";
   }
   if (password === "") {
     document.getElementById("pass").innerText = "*password is Required";
+    valid=true;
     
   }
   else if (!password.match(passpattern)) {
     document.getElementById("pass").innerText = "*password should be of mininum 6 characeters";
+    valid=true;
     
   }
   else {
@@ -51,18 +52,22 @@ document.getElementById("validation").addEventListener("submit", function (event
 
   if (confirmpassword === "") {
     document.getElementById("confirm").innerText = "*confirm password is Required";
+    valid=false;
     
   }
   else if (confirmpassword !== password) {
     document.getElementById("confirm").innerText = "*password  must be same";
+    valid=false;
     
   }
   else {
     document.getElementById("confirm").innerText = "";
 
   }
-
-    putdata(username, password);
+  if(valid){
+      putdata(username, password);
+  }
+    
   
 });
 async function putdata(user, pass) {

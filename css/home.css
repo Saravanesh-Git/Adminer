@@ -18,6 +18,7 @@ body {
     color: aliceblue;
     transition: background-position 0.05s ease;
     height: 100vh;
+
 }
 
 nav {
@@ -31,7 +32,7 @@ nav {
     background-color: #022631;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     color: aliceblue;
-    z-index: 1;
+    z-index: 2;
 }
 
 .name {
@@ -91,7 +92,7 @@ nav {
 
 .side {
     margin-top: 50px;
-    height: 780px;
+    height: 100%;
     width: 250px;
     position: fixed;
     top: 0;
@@ -126,7 +127,6 @@ nav {
 }
 
 .maincontent {
-    width: 100%;
     height: auto;
     margin-left: 250px;
     padding: 1rem;
@@ -134,20 +134,43 @@ nav {
     background-color: transparent;
     height: 100vh;
     display: flex;
+    flex-direction: row;
     width: calc(100% - 250px);
     box-sizing: border-box;
 }
 
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+}
+
+.adminer {
+    margin-top: 20px;
+    width: 32%;
+    backdrop-filter: blur(32px);
+    background-color: rgba(0, 0, 0, 0.70) !important;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+    height: 430px;
+     cursor: pointer;
+}
+
 .labs {
     border-radius: 10px;
-    margin-top: 75px;
+    margin-top: 85px;
     width: 100%;
     height: 100px;
     padding-left: 35px;
     padding-top: 15px;
     backdrop-filter: blur(32px);
     background-color: rgba(0, 0, 0, 0.65) !important;
-    position: relative;
+
+
 }
 
 .labs p {
@@ -155,18 +178,6 @@ nav {
 
 }
 
-.adminer {
-    backdrop-filter: blur(42px);
-    background-color: rgba(0, 0, 0, 0.65) !important;
-    position: absolute;
-    border-radius: 10px;
-    width: 410px;
-    top: 210px;
-    left: 270px;
-    height: 400px;
-    cursor: pointer;
-
-}
 
 .adminer img {
     width: 60px;
@@ -180,7 +191,7 @@ nav {
 .para {
     position: relative;
     top: 40px;
-    left: 15px;
+    left: 10px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -190,141 +201,23 @@ nav {
     font-size: 13px;
 }
 
-.mariadb {
-    backdrop-filter: blur(42px);
-    background-color: rgba(0, 0, 0, 0.65) !important;
-    position: absolute;
-    border-radius: 10px;
-    width: 410px;
-    top: 460px;
-    left: 270px;
-    height: 400px;
-    cursor: pointer;
-    overflow-y: auto;
-    padding: 20px;
-    flex-grow: 1;
-
-}
-
-.mariadb img {
-    width: 60px;
-    height: 33px;
-    position: relative;
-    top: 15px;
-    size: 2px;
-    z-index: 20;
-}
-
-.mariadb h5 {
-    position: absolute;
-    left: 110px;
-    top: 45px;
-}
-
-.postgre {
-    width: 60px;
-    top: 15px;
-    size: 2px;
-    z-index: 20;
-    height: 50px;
-    position: relative;
-    bottom: 15px;
-
-}
-
-.database {
-    backdrop-filter: blur(42px);
-    background-color: rgba(0, 0, 0, 0.65) !important;
-    position: absolute;
-    border-radius: 10px;
-    width: 400px;
-    top: 210px;
-    left: 700px;
-    height: 400px;
-
-}
-
-.database img {
-    width: 60px;
-    height: 33px;
-    position: relative;
-    top: 15px;
-    size: 2px;
-    z-index: 20;
-}
-
-.database h5 {
-    position: absolute;
-    left: 100px;
-    top: 30px;
-}
-
-.mongodb {
-    backdrop-filter: blur(42px);
-    background-color: rgba(0, 0, 0, 0.65) !important;
-    position: absolute;
-    border-radius: 10px;
-    width: 400px;
-    top: 210px;
-    left: 1120px;
-    height: 400px;
-}
-
-.mongodb img {
-    width: 60px;
-    height: 33px;
-    position: relative;
-    top: 15px;
-    size: 2px;
-    z-index: 20;
-}
-
-.mongodb h5 {
-    position: absolute;
-    left: 100px;
-    top: 30px;
-}
-
 .points {
     padding-top: 10px;
     padding: 5px;
-    padding-left: 30px;
-}
-
-.point {
-    margin-top: 50px;
-    padding: 5px;
-    padding-left: 30px;
-}
-
-.point li {
-    padding-top: 13px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 17px;
+    padding-left: 20px;
 }
 
 .points li {
     padding-top: 10px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 17px;
-}
-
-.mongopoint {
-    margin-top: 40px;
-    padding: 5px;
-    padding-left: 30px;
 
 }
 
-.mongopoint li {
-    padding-top: 10px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 17px;
-}
 
 .Learn {
     position: absolute;
-    top: 350px;
+    top: 375px;
     left: 290px;
     width: 90px;
     height: 30px;
@@ -339,7 +232,7 @@ nav {
 
 .manage {
     position: absolute;
-    top: 350px;
+    top: 375px;
     font-family: Arial, Helvetica, sans-serif;
     left: 180px;
     width: 90px;
@@ -358,8 +251,8 @@ nav {
     width: 60px;
     height: 60px;
     position: relative;
-    left: 25px;
-    top: 25px;
+    left: 10px;
+    top: 15px;
     border-radius: 5px;
     z-index: 10;
     background-color: white;
@@ -368,7 +261,7 @@ nav {
 .adminer h5 {
     position: absolute;
     left: 100px;
-    top: 30px;
+    top: 35px;
 }
 
 .span {
@@ -380,6 +273,7 @@ nav {
     left: 100px;
     width: 130px;
     padding: 5px;
+    top:65px;
     height: 20px;
     border-radius: 20px;
 }
@@ -402,7 +296,7 @@ nav {
     height: 450px;
     background-color: aliceblue;
     position: fixed;
-    left: 1185px;
+    left: 77%;
     top: 225px;
     border-radius: 5px;
     display: none;
@@ -424,8 +318,8 @@ nav {
     position: fixed;
     width: 75px;
     height: 75px;
-    left: 1420px;
-    top: 710px;
+    left: 92%;
+    top: 85%;
     display: block;
     border-radius: 50px;
     background: linear-gradient(to right, #1d8dfd, #0176fb);
@@ -498,8 +392,8 @@ nav {
 }
 
 footer {
-    position: absolute;
-    top: 1610px;
+
+    top: 900px;
     left: 0;
     height: 55px;
     width: 100%;
@@ -509,7 +403,7 @@ footer {
 .footer {
     display: flex;
     justify-content: center;
-     margin-left: 245px;
+    margin-left: 245px;
 }
 
 .footer p {

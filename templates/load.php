@@ -35,5 +35,8 @@ function mysql_form($mysql){
 function mysql_css($css){
     include __DIR__."/../css/$css.php";
 }
-?>
+function add_user_form($adduser){
+    include __DIR__."/../__templates/$adduser.php";
+}
+
 
