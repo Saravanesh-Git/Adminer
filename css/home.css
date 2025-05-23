@@ -17,7 +17,7 @@ body {
     margin: 0;
     color: aliceblue;
     transition: background-position 0.05s ease;
-    height: 100vh;
+    height: 100%;
 
 }
 
@@ -127,29 +127,30 @@ nav {
 }
 
 .maincontent {
+
     height: auto;
     margin-left: 250px;
     padding: 1rem;
-    overflow-y: auto;
     background-color: transparent;
     height: 100vh;
-    display: flex;
-    flex-direction: row;
     width: calc(100% - 250px);
     box-sizing: border-box;
 }
 
 
 .content {
+    padding: 1rem;
+    overflow-y: auto;
+
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 15px;
     justify-content: flex-start;
 }
 
 .adminer {
     margin-top: 20px;
-    width: 32%;
+    width: 32.5%;
     backdrop-filter: blur(32px);
     background-color: rgba(0, 0, 0, 0.70) !important;
     border-radius: 10px;
@@ -157,7 +158,7 @@ nav {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     flex-shrink: 0;
     height: 430px;
-     cursor: pointer;
+    cursor: pointer;
 }
 
 .labs {
@@ -175,6 +176,7 @@ nav {
 
 .labs p {
     padding-top: 10px;
+    padding-left: 20px;
 
 }
 
@@ -273,7 +275,7 @@ nav {
     left: 100px;
     width: 130px;
     padding: 5px;
-    top:65px;
+    top: 65px;
     height: 20px;
     border-radius: 20px;
 }
@@ -391,23 +393,10 @@ nav {
 
 }
 
-footer {
-
-    top: 900px;
-    left: 0;
-    height: 55px;
-    width: 100%;
-    background-color: #022631;
-}
-
-.footer {
-    display: flex;
-    justify-content: center;
-    margin-left: 245px;
-}
-
-.footer p {
-    text-decoration: none;
-    color: rgb(212, 206, 196);
-    padding: 15px;
-}
+/* footer {
+  width: 100%;
+  background-color: #0a1e2e; 
+  color: white;
+  text-align: center;
+  padding: 1rem;
+} */

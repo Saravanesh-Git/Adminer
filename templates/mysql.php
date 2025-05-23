@@ -34,11 +34,13 @@ include 'load.php';
             </button>
         </div>
      <?add_user_form('_service_form');?>
-    
+    <div class="">
+
+    </div>
 
     
 
     </div>
-    <?get_footer('_home_footer'); ?>
+  
      <script src="/js/mysql.js"></script>
 </body>

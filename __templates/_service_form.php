@@ -11,8 +11,8 @@
             <label for="">Confirm Password </label>
             <input type="password" placeholder="confirm password" id="confirmpassword">
             <span  class="tag" style="top:260px; color: white; font-weight: bold;" id="confirm"> </span>
-            <button style="left: 200px; top:295px;">Submit</button>
-            <button style="left: 310px; top:295px; background-color: #1b86b0;">Cancel</button>
+            <button style="left: 200px; top:295px;" class="confirm">Submit</button>
+            <button style="left: 310px; top:295px; background-color: #1b86b0;" class="close">Cancel</button>
         </form>
 
      </div>   

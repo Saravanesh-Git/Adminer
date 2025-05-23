@@ -48,7 +48,7 @@
         
         width:1100px;
         position: absolute;
-        top: 40px;
+        top: 10px;
         left:130px;
         color:white;
     }
@@ -56,7 +56,7 @@
         font-size:21px;
     }
     .content p  {
-        padding-top:13px;
+        padding-top:8px;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size:16px;
     }
@@ -73,10 +73,11 @@
         font-size: 14px;
         cursor: pointer;
     }
-    .form{
+    .loginform{
         overflow: hidden;
         transform: scale(0);
-        transition: transform .4s ease , height .2s ease;
+         transition: opacity 0.3s ease, transform 0.3s ease;
+         pointer-events: none;
         position:absolute;
         top:420px;
         left:350px;
@@ -85,10 +86,13 @@
         backdrop-filter: blur(32px);
         background-color: rgba(0, 0, 0, 0.68);
         border-radius:10px;
+    
      
     }
-    .form.active-pop{
+    .loginform.active-pop{
     transform:scale(1) ;
+    opacity: 1;
+      pointer-events: all;
     
 }
     form{
@@ -103,13 +107,13 @@
     label{
         position:relative;
         top:27px;
-        margin-top:30px;
+        margin-top:25px;
         margin-left:20px;
     }
     
     input{
         border:none;
-        margin-left:10px;
+        margin-left:20px;
         border-radius:5px;
         backdrop-filter: blur(32px);
         background-color: rgba(0,0,0,0.45);
@@ -136,7 +140,7 @@
         backdrop-filter: blur(32px);
         background-color: rgba(0,0,0,0.85);
         border-radius:10px;
-        border: 1.5px solid rgb(244, 127, 41);
+        border: 2.5px solid rgb(244, 127, 41);
     }
     .loginform h4{
         position:relative;

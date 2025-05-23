@@ -4,14 +4,18 @@ document.addEventListener('mousemove', (hii) => {
   document.body.style.backgroundPosition = `${xPercent}% ${yPercent}%`;
 });
 let popup = document.querySelector(".adduser");
-let form = document.querySelector(".form")
+let loginform = document.querySelector(".loginform")
 popup.addEventListener("click", function () {
-  form.classList.add("active-pop");
+  loginform.classList.add("active-pop");
+})
+let close = document.querySelector(".close");
+close.addEventListener("click", function (){
+  loginform.classList.remove("active-pop")
 })
 
 
 
-document.getElementById("validation").addEventListener("submit", function (event) {
+document.querySelector(".confirm").addEventListener("click", function (event) {
   event.preventDefault();
   let valid=true;
   let username = document.getElementById("usernames").value.trim();

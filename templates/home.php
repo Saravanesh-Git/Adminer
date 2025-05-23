@@ -18,6 +18,20 @@ include 'load.php';
 </head>
 
 <body>
+    <style>
+        footer{
+            background-color: #022631;
+            margin-top:820px;
+            height:55px;
+            display:flex;
+            width: 100%;
+            justify-content:center;
+        }
+        .footer{
+            margin-top:15px;
+            margin-left:20%;
+        }
+    </style>
     <?load_home_nav('_homenav');?>
 
     <div class="accountbox"> </div>
