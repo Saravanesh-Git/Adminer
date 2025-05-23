@@ -34,7 +34,14 @@ include 'load.php';
             </button>
         </div>
      <?add_user_form('_service_form');?>
-    <div class="">
+    <div class="sqlusers">
+        <h4>SQL USERS(you can add only one user)</h4>
+        <div class="userbox">
+        <label for="" class="labels" >Username</label>
+        <input class="sqluserinput"type="text" id="uservalue">
+        <label for="" class="labels" style="top:30px;" >Password</label>
+        <input  class="sqluserinput" type="password"style="top:30px; margin-left:29px;" id="passvalue">
+        </div>
 
     </div>
 

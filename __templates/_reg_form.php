@@ -30,7 +30,7 @@
             <button class="register">Submit</button>
         </div>
         <div class="Register">
-            <P>Already have an account ?<a href="index">Login</a></P>
+            <P>Already have an account ?<a href="login">Login</a></P>
         </div>
 
       

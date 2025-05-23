@@ -43,7 +43,7 @@ async def signup(user: Signup):
         cursor.close()
         conn.close()
 
-@app.post("/index/login")
+@app.post("/login/login")
 async def Login(user: login):
     conn = db_connection()
     cursor = conn.cursor()

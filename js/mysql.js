@@ -90,8 +90,9 @@ async function putdata(user, pass) {
     }
     const result = await response.json();
     alert(result.message);
-    console.log(result.username);
-    console.log(result.password);
+    document.getElementById("uservalue").value=result.username;
+    document.getElementById("passvalue").value=result.password;
+ 
   } catch (error) {
     document.getElementById("user").innerText = error.message;
   }

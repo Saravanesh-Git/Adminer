@@ -104,14 +104,14 @@
         height:200px; */
     
     }
-    label{
+    .label{
         position:relative;
         top:27px;
         margin-top:25px;
         margin-left:20px;
     }
     
-    input{
+    .userinput{
         border:none;
         margin-left:20px;
         border-radius:5px;
@@ -153,5 +153,51 @@
         font-size:12px;
         top:103px;
         margin-left:32px;
+    }
+    .sqlusers{
+        width:25%;
+        height:28%;
+        left:20%;
+        position: absolute;
+        top:50%;
+        backdrop-filter: blur(32px);
+        display: flex;
+        justify-content:center;
+        flex-direction:column;
+        border-radius:10px;
+        background-color: rgba(0,0,0,0.75);
+
+    }
+    .sqlusers h4{
+        position: absolute;
+        top:10%;
+        left:5%;
+    }
+    .userbox{
+
+        width:80%;
+    }
+    .labels{
+        position:relative;
+        top:5px;
+ 
+    
+        margin-left:20px;
+
+    }
+    .sqluserinput{
+        border:none;
+        top:5px;
+        margin-left:25px;
+        border-radius:5px;
+        backdrop-filter: blur(32px);
+        background-color: rgba(0,0,0,0.45);
+        border:none;
+        width:170px;
+        height:30px;
+        position:relative;
+        color:white;
+        padding-left:10px;
+
     }
     </style>
