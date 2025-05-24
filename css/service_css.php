@@ -11,6 +11,7 @@
         height: 100vh;
         width: calc(100% - 250px);
         box-sizing: border-box;
+        z-index: 1;
     }
     .sql{
         border-radius: 10px;
@@ -58,7 +59,7 @@
     .content p  {
         padding-top:8px;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        font-size:16px;
+        font-size:18px;
     }
     button{
         position: absolute;
@@ -132,6 +133,7 @@
         
     }
     .loginform{
+        z-index: 2;
         width: 450px;
         left:600px;
         height:350px;
@@ -155,6 +157,8 @@
         margin-left:32px;
     }
     .sqlusers{
+        transform:scale(0);
+        transition: opacity 0.3s ease, transform 0.3s ease;
         width:25%;
         height:28%;
         left:20%;
@@ -167,6 +171,9 @@
         border-radius:10px;
         background-color: rgba(0,0,0,0.75);
 
+    }
+    .sqlusers.popup{
+        transform:scale(1);
     }
     .sqlusers h4{
         position: absolute;
@@ -199,5 +206,41 @@
         color:white;
         padding-left:10px;
 
+    }
+    .addusermessage{
+        backdrop-filter: blur(32px);
+        background-color: rgba(0,0,0,0.85);
+        width:25%;
+        position:absolute;
+        top:45%;
+        height:160px;
+        border-radius:10px;
+        left:42%;
+        border:2px solid rgb(20, 222, 225);
+        transform: scale(0);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    
+    }
+    .addusermessage.message{
+        transform:scale(1)
+    }
+    .addusermessage h4{
+        margin-top:10%;
+        margin-left:10%;
+
+    }
+    .ok{
+        position:absolute;
+        top:70%;
+        left: 75%;
+        width: 60px;
+        height: 30px;
+        padding: 5px;
+        background-color:rgb(20, 222, 225);
+        border: none;
+        border-radius: 5px;
+        font-size: 14px;
+        cursor: pointer;
+        color:white;
     }
     </style>

@@ -38,5 +38,6 @@ function mysql_css($css){
 function add_user_form($adduser){
     include __DIR__."/../__templates/$adduser.php";
 }
-
-
+function mysql_user($show){
+    include __DIR__."/../__templates/$show.php";
+}

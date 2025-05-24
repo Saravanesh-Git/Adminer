@@ -234,7 +234,7 @@ nav {
 
 .manage {
     position: absolute;
-    top: 375px;
+    top: 80%;
     font-family: Arial, Helvetica, sans-serif;
     left: 180px;
     width: 90px;
@@ -299,7 +299,7 @@ nav {
     background-color: aliceblue;
     position: fixed;
     left: 77%;
-    top: 225px;
+    top: 19%;
     border-radius: 5px;
     display: none;
 }

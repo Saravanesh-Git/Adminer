@@ -21,7 +21,7 @@ include 'load.php';
     <style>
         footer{
             background-color: #022631;
-            margin-top:820px;
+            margin-top:1000px;
             height:55px;
             display:flex;
             width: 100%;

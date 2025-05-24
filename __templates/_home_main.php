@@ -24,8 +24,8 @@
                 <li>Supports multiple database systems, allowing users to manage different databases from a single
                     interface.</li>
             </div>
-            <a href="adminer"><button class="manage" style="top: 375px;">Manage</button></a>
-            <a href="https://www.adminer.org/en/" target="_blank" ><button class="Learn" style="top: 375px;">Learn more</button></a>
+            <a href="adminer"><button class="manage" style="top: 87.5%;">Manage</button></a>
+            <a href="https://www.adminer.org/en/" target="_blank" ><button class="Learn" style="top: 87.5%;">Learn more</button></a>
         </div>
         <div class="adminer" >
             <div class="box">
@@ -41,8 +41,8 @@
                 <li>Widely used in web applications (e.g., WordPress, PHP apps) and enterprise systems</li>
                 <li>Optimized for read-heavy workloads.</li>
             </div>
-            <a href="mysql"><button class="manage" style="top: 375px;">Manage</button></a>
-            <a href="https://dev.mysql.com/doc/" target="_blank"><button class="Learn" style="top: 375px;">Learn
+            <a href="mysql"><button class="manage" style="top: 87.5%;">Manage</button></a>
+            <a href="https://dev.mysql.com/doc/" target="_blank"><button class="Learn" style="top: 87.5%;">Learn
                     more</button></a>
         </div>
         <div class="adminer" >
@@ -59,13 +59,13 @@
                 <li>Designed for high scalability, flexibility, and performance.</li>
                 <li>Suitable for real-time big data apps.</li>
             </div>
-            <a href="../adminer.php"><button class="manage" style="top: 375px;">Manage</button></a>
-            <a href="https://www.mongodb.com/docs/" target="_blank"><button class="Learn" style="top: 375px;">Learn
+            <a href="mongodb"><button class="manage" style="top: 87.5%;">Manage</button></a>
+            <a href="https://www.mongodb.com/docs/" target="_blank"><button class="Learn" style="top: 87.5%;">Learn
                     more</button></a>
         </div> 
         <div class="adminer" >
             <div class="box" >
-                <img src="/image/images.png" alt="">
+                <img src="/image/image.png" alt="">
             </div>
             <h5><strong>MARIADB SERVER</strong></h5>
             <span class="span" >adminer.selfmade.solution</span>
@@ -77,8 +77,8 @@
                 <li>Often faster than MySQL due to better optimization.</li>
                 <li>Improved storage engines and optimization.</li>
             </div>
-            <a href="../adminer.php"><button class="manage" style="top: 375px">Manage</button></a>
-            <a href="https://mariadb.com/kb/en/documentation/" target="_blank"><button class="Learn" style="top: 375px">Learn
+            <a href="mariadb"><button class="manage" style="top: 87.5%">Manage</button></a>
+            <a href="https://mariadb.com/kb/en/documentation/" target="_blank"><button class="Learn" style="top: 87.5%">Learn
                     more</button></a>
         </div>
         <div class="adminer" >
@@ -96,7 +96,7 @@
                 <li>Allows users to define custom functions, data types, operators, and even languages.</li>
                 <li>Fully supports Atomicity, Consistency, Isolation, and Durability.</li>
             </div>
-            <a href="../adminer.php"><button class="manage" >Manage</button></a>
+            <a href="../adminer.php"><button class="manage" style="top: 87.5%">Manage</button></a>
             <a href="https://www.postgresql.org/docs/" target="_blank" ><button class="Learn" >Learn
                     more</button></a>
         </div>
@@ -114,7 +114,7 @@
                 <li>Early access to new capabilities (e.g., AI features, JSON enhancements, new PL/SQL features)</li>
                 <li>Participate in shaping the product by reporting bugs and suggestions.</li>
             </div>
-            <a href="../adminer.php"><button class="manage" >Manage</button></a>
+            <a href="../adminer.php"><button class="manage" style="top: 87.5%">Manage</button></a>
             <a href="https://docs.oracle.com/cd/E71937_01/" target="_blank" ><button class="Learn" >Learn
                     more</button></a>
         </div>
@@ -132,7 +132,7 @@
                 <li>Includes authentication, encryption, role-based access, and advanced auditing.</li>
                
             </div>
-            <a href="../adminer.php"><button class="manage" >Manage</button></a>
+            <a href="../adminer.php"><button class="manage"style="top: 87.5%" >Manage</button></a>
             <a href="https://learn.microsoft.com/en-us/sql/?view=sql-server-ver17" target="_blank"><button class="Learn" >Learn
                     more</button></a>
         </div>
@@ -150,7 +150,7 @@
                 <li>Supports Atomicity, Consistency, Isolation, and Durability, ensuring safe and correct transactions.</li>
                 <li>Very fast for small-to-medium databases.</li>
             </div>
-            <a href="../adminer.php"><button class="manage" >Manage</button></a>
+            <a href="../adminer.php"><button class="manage"style="top: 87.5%" >Manage</button></a>
             <a href="https://www.sqlite.org/docs.html" target="_blank" ><button class="Learn" >Learn
                     more</button></a>
         </div>

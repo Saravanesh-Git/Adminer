@@ -23,11 +23,11 @@ include 'load.php';
     <div class="container">
         <div class="sql">
             <div class="imagebox">
-                <img src="/image/MySQL.png" alt="">
+                <img src="/image/mongodb.png" alt="">
             </div>
             <div class="content">
-                <h4>MYSQL SERVER</h4>
-                <p>MySQL is the world's most popular open source database. With its proven performance, reliability and ease-of-use, MySQL has become the leading database choice for web-based applications, used by high profile web properties including Facebook, Twitter, YouTube, Yahoo! and many more. Additionally, it is an extremely popular choice as embedded database, distributed by thousands of ISVs and OEMs. MySQL is a key part of LAMP (Linux, Apache, MySQL, PHP / Perl / Python), the fast growing open source enterprise software stack.</p>
+                <h4>MONGODB SERVER</h4>
+                <p>MongoDB is a document database, meaning it stores data in flexible, JSON-like documents instead of traditional tables and rows like relational databases. It's a NoSQL database, offering a flexible data model and efficient data storage and retrieval. MongoDB is widely used for various applications due to its scalability, ease of use, and compatibility with numerous programming languages. </p>
             </div>
             <button class="adduser">
                 Add user
